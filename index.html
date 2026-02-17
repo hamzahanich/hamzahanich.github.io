@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamza Hanich — Cloud / DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Hamza Hanich — Cloud/DevOps Engineering Student specializing in CI/CD, Docker, Kubernetes & Linux automation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;HH /&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-content fade-in">
+      <div class="hero-photo-wrapper">
+        <!-- Replace with your photo: save as assets/img/photo.jpg -->
+        <img src="assets/img/photo.jpg" alt="Hamza Hanich" class="hero-photo" onerror="this.style.display='none'" />
+      </div>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Hamza Hanich</h1>
+      <p class="hero-title">
+        <span class="terminal-prompt">&gt;&nbsp;</span>
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-location"><i class="fa-solid fa-location-dot"></i> Oujda, Morocco</p>
+      <div class="hero-links">
+        <a href="https://github.com/hamzahanich" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <!-- UPDATE: Replace # with your LinkedIn URL -->
+        <a href="https://linkedin.com/in/hamzahanich" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:hamzahanich14@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+212695208609" title="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+      <a href="assets/moncv.pdf" download class="btn btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in"><span class="accent">#</span> About Me</h2>
+      <div class="about-content fade-in">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">about.sh</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">$</span> cat about.txt</p>
+            <p class="terminal-output">
+              Cloud / DevOps engineering student with hands-on experience in CI/CD,
+              Docker, Kubernetes, and Linux automation. I build reliable pipelines,
+              deploy containerized applications, and troubleshoot infrastructure
+              environments with a security-first mindset.
+            </p>
+            <p class="terminal-output">
+              Currently seeking a PFA internship in Cloud / DevOps to apply my
+              skills in a real-world production environment. Rigorous, autonomous,
+              and always learning.
+            </p>
+            <p><span class="terminal-prompt">$</span> <span class="cursor-blink">_</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in"><span class="accent">#</span> Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fa-solid fa-diagram-project project-icon"></i>
+            <h3>Automated CI/CD Pipeline</h3>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Jenkins</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Maven</span>
+            <span class="tag">Trivy</span>
+            <span class="tag">Git</span>
+          </div>
+          <ul class="project-details">
+            <li>Built a full CI/CD pipeline triggered by Git pushes via Jenkins</li>
+            <li>Automated Maven builds and Docker image creation</li>
+            <li>Deployed containerized apps on Kubernetes (Minikube)</li>
+            <li>Integrated Trivy for container vulnerability scanning</li>
+            <li>Investigated & resolved pipeline errors (Docker, YAML, builds)</li>
+            <li>Administered Jenkins & Docker on a Linux machine</li>
+          </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fa-solid fa-cloud project-icon"></i>
+            <h3>Cloud Infrastructure & Automated Deployment</h3>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Linux</span>
+            <span class="tag">SSH</span>
+            <span class="tag">Bash</span>
+            <span class="tag">Git</span>
+          </div>
+          <ul class="project-details">
+            <li>Deployed a containerized application on Linux with Docker & Nginx</li>
+            <li>Automated deployment from Git with custom scripts</li>
+            <li>Hardened servers: SSH key auth, firewall rules</li>
+            <li>Set up monitoring & logging for service availability</li>
+            <li>Diagnosed network, service & container connectivity issues</li>
+            <li>Practiced system hardening & infrastructure troubleshooting</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in"><span class="accent">#</span> Skills</h2>
+      <div class="skills-grid fade-in">
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-cloud"></i> Cloud / DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Minikube</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-server"></i> Systems</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux (Ubuntu)</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">VirtualBox</span>
+            <span class="skill-tag">SSH</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-shield-halved"></i> Security</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Trivy</span>
+            <span class="skill-tag">Linux Hardening</span>
+            <span class="skill-tag">Firewall</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACTIVITIES & LANGUAGES ========== -->
+  <section id="activities" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in"><span class="accent">#</span> Activities & Languages</h2>
+      <div class="activities-grid">
+
+        <!-- Activities -->
+        <div class="activity-card fade-in">
+          <h3><i class="fa-solid fa-people-group"></i> Activities & Volunteering</h3>
+          <div class="activity-item">
+            <h4>Graphic Designer</h4>
+            <p>Google Developer Student Club & Sports Club — Teamwork, visual communication, event material creation.</p>
+          </div>
+          <div class="activity-item">
+            <h4>Volunteer</h4>
+            <p>Solidarity Club — Community actions & event organization.</p>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="activity-card fade-in">
+          <h3><i class="fa-solid fa-language"></i> Languages</h3>
+          <div class="language-list">
+            <div class="language-item">
+              <span class="language-name">Arabic</span>
+              <span class="language-level">Native</span>
+              <div class="language-bar"><div class="language-fill" style="width:100%"></div></div>
+            </div>
+            <div class="language-item">
+              <span class="language-name">French</span>
+              <span class="language-level">Professional</span>
+              <div class="language-bar"><div class="language-fill" style="width:85%"></div></div>
+            </div>
+            <div class="language-item">
+              <span class="language-name">English</span>
+              <span class="language-level">Fluent</span>
+              <div class="language-bar"><div class="language-fill" style="width:80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in"><span class="accent">#</span> Get In Touch</h2>
+      <div class="contact-content fade-in">
+        <p class="contact-text">
+          I'm currently looking for a <strong>PFA internship in Cloud / DevOps</strong>.
+          Whether you have a question or just want to say hi, feel free to reach out!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:hamzahanich14@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
+          <a href="https://github.com/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://linkedin.com/in/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <p>&lt; Built by <span class="accent">Hamza Hanich</span> /&gt; &mdash; 2026</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
