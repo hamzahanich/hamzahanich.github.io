@@ -21,14 +21,19 @@
         <i class="fa-solid fa-bars"></i>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#activities">Activities</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+        <li><a href="#activities" data-i18n="nav_activities">Parcours</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         <li>
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
             <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+        <li>
+          <button class="lang-toggle" id="langToggle" aria-label="Changer la langue">
+            <span id="langLabel">FR</span>
           </button>
         </li>
       </ul>
@@ -42,28 +47,27 @@
         <!-- Replace with your photo: save as assets/img/photo.jpg -->
         <img src="assets/img/photo.jpg" alt="Hamza Hanich" class="hero-photo" onerror="this.style.display='none'" />
       </div>
-      <p class="hero-greeting">Hi, I'm</p>
+      <p class="hero-greeting" data-i18n="hero_hi">Bonjour, je suis</p>
       <h1 class="hero-name">Hamza Hanich</h1>
       <p class="hero-title">
         <span class="terminal-prompt">&gt;&nbsp;</span>
         <span id="typed-text"></span><span class="cursor">|</span>
       </p>
-      <p class="hero-location"><i class="fa-solid fa-location-dot"></i> Oujda, Morocco</p>
+      <p class="hero-location" data-i18n="hero_location"><i class="fa-solid fa-location-dot"></i> Oujda, Maroc</p>
       <div class="hero-links">
         <a href="https://github.com/hamzahanich" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <!-- UPDATE: Replace # with your LinkedIn URL -->
         <a href="https://linkedin.com/in/hamzahanich" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:hamzahanich14@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
         <a href="tel:+212695208609" title="Phone"><i class="fa-solid fa-phone"></i></a>
       </div>
-      <a href="assets/moncv.pdf" download class="btn btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+      <a href="assets/moncv.pdf" download class="btn btn-primary" data-i18n="hero_cv"><i class="fa-solid fa-download"></i> Télécharger le CV</a>
     </div>
   </section>
 
   <!-- ========== ABOUT ========== -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title fade-in"><span class="accent">#</span> About Me</h2>
+      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="about_title">À propos de moi</span></h2>
       <div class="about-content fade-in">
         <div class="terminal-window">
           <div class="terminal-header">
@@ -74,12 +78,12 @@
           </div>
           <div class="terminal-body">
             <p><span class="terminal-prompt">$</span> cat about.txt</p>
-            <p class="terminal-output">
+            <p class="terminal-output" data-i18n="about_main">
               Étudiant en 4ᵉ année d’ingénierie en cybersécurité, passionné par la sécurité applicative et l’analyse de vulnérabilités.<br>
               Je recherche un stage PFA (Été 2026) pour contribuer à des missions concrètes en sécurité et développer mes compétences sur des problématiques réelles.<br>
               Rigoureux, autonome, et motivé par l’apprentissage continu.
             </p>
-            <p class="terminal-output">
+            <p class="terminal-output" data-i18n="about_skills">
               Compétences : DevOps (Docker, CI/CD, Linux), Sécurité AppSec & Réseau (STRIDE, SAST/DAST/SCA, Fuzzing), Scripting (Python, Bash), Analyse de logs, Automatisation.<br>
               Langues : Français, Anglais, Arabe.
             </p>
@@ -93,14 +97,14 @@
   <!-- ========== PROJECTS ========== -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title fade-in"><span class="accent">#</span> Projects</h2>
+      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="projects_title">Projets</span></h2>
       <div class="projects-grid">
 
         <!-- Project 1: Système Automatisé de Détection d'Anomalies pour APIs REST -->
         <div class="project-card fade-in">
           <div class="project-header">
             <i class="fa-solid fa-network-wired project-icon"></i>
-            <h3>Système Automatisé de Détection d'Anomalies pour APIs REST</h3>
+            <h3 data-i18n="project1_title">Système Automatisé de Détection d'Anomalies pour APIs REST</h3>
           </div>
           <div class="project-tags">
             <span class="tag">Python</span>
@@ -108,9 +112,9 @@
             <span class="tag">Docker</span>
           </div>
           <ul class="project-details">
-            <li>Extraction et structuration des caractéristiques réseau depuis des logs bruts pour différencier le trafic légitime des attaques complexes.</li>
-            <li>Intégration et fine-tuning d’un modèle IA (LLaMa) via des scripts Python pour automatiser la détection des payloads malveillants (fuzzing) et réduire les faux positifs.</li>
-            <li>Conteneurisation de l’environnement d’analyse et rédaction de documentation technique en anglais pour les tests fonctionnels.</li>
+            <li data-i18n="project1_1">Extraction et structuration des caractéristiques réseau depuis des logs bruts pour différencier le trafic légitime des attaques complexes.</li>
+            <li data-i18n="project1_2">Intégration et fine-tuning d’un modèle IA (LLaMa) via des scripts Python pour automatiser la détection des payloads malveillants (fuzzing) et réduire les faux positifs.</li>
+            <li data-i18n="project1_3">Conteneurisation de l’environnement d’analyse et rédaction de documentation technique en anglais pour les tests fonctionnels.</li>
           </ul>
         </div>
 
@@ -118,7 +122,7 @@
         <div class="project-card fade-in">
           <div class="project-header">
             <i class="fa-solid fa-shield-halved project-icon"></i>
-            <h3>Pipeline CI/CD d'Analyse Automatisée de Vulnérabilités</h3>
+            <h3 data-i18n="project2_title">Pipeline CI/CD d'Analyse Automatisée de Vulnérabilités</h3>
           </div>
           <div class="project-tags">
             <span class="tag">GitHub Actions</span>
@@ -128,9 +132,9 @@
             <span class="tag">Bandit</span>
           </div>
           <ul class="project-details">
-            <li>Conception d’un pipeline CI/CD avec GitHub Actions pour automatiser les tests de sécurité à chaque validation de code.</li>
-            <li>Intégration d’outils open-source (Trivy, Bandit) via des scripts Shell pour scanner automatiquement les images Docker et le code source.</li>
-            <li>Blocage des déploiements en cas de failles critiques et génération automatique de rapports d’audit.</li>
+            <li data-i18n="project2_1">Conception d’un pipeline CI/CD avec GitHub Actions pour automatiser les tests de sécurité à chaque validation de code.</li>
+            <li data-i18n="project2_2">Intégration d’outils open-source (Trivy, Bandit) via des scripts Shell pour scanner automatiquement les images Docker et le code source.</li>
+            <li data-i18n="project2_3">Blocage des déploiements en cas de failles critiques et génération automatique de rapports d’audit.</li>
           </ul>
         </div>
 
@@ -138,7 +142,7 @@
         <div class="project-card fade-in">
           <div class="project-header">
             <i class="fa-brands fa-android project-icon"></i>
-            <h3>Outil d’Analyse de Sécurité Réseau pour Android</h3>
+            <h3 data-i18n="project3_title">Outil d’Analyse de Sécurité Réseau pour Android</h3>
           </div>
           <div class="project-tags">
             <span class="tag">Python</span>
@@ -147,9 +151,9 @@
             <span class="tag">Analyse Statique</span>
           </div>
           <ul class="project-details">
-            <li>Création d’un utilitaire pour extraire automatiquement les fichiers de Configuration de Sécurité Réseau (NSC) à partir d’APKs compilés.</li>
-            <li>Analyse des fichiers NSC extraits pour détecter de potentielles mauvaises configurations exposant les applications à des failles de sécurité réseau.</li>
-            <li>Évaluation de la prévalence de ces vulnérabilités sur un dataset d’applications réelles (APKs marocains et F-Droid) et discussion des résultats.</li>
+            <li data-i18n="project3_1">Création d’un utilitaire pour extraire automatiquement les fichiers de Configuration de Sécurité Réseau (NSC) à partir d’APKs compilés.</li>
+            <li data-i18n="project3_2">Analyse des fichiers NSC extraits pour détecter de potentielles mauvaises configurations exposant les applications à des failles de sécurité réseau.</li>
+            <li data-i18n="project3_3">Évaluation de la prévalence de ces vulnérabilités sur un dataset d’applications réelles (APKs marocains et F-Droid) et discussion des résultats.</li>
           </ul>
         </div>
 
@@ -160,11 +164,11 @@
   <!-- ========== SKILLS ========== -->
   <section id="skills" class="section">
     <div class="container">
-      <h2 class="section-title fade-in"><span class="accent">#</span> Skills</h2>
+      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="skills_title">Compétences</span></h2>
       <div class="skills-grid fade-in">
 
         <div class="skill-group">
-          <h3><i class="fa-solid fa-shield-halved"></i> Sécurité AppSec & Réseau</h3>
+          <h3><i class="fa-solid fa-shield-halved"></i> <span data-i18n="skills_appsec">Sécurité AppSec & Réseau</span></h3>
           <div class="skill-tags">
             <span class="skill-tag">STRIDE</span>
             <span class="skill-tag">SAST/DAST/SCA</span>
@@ -177,7 +181,7 @@
         </div>
 
         <div class="skill-group">
-          <h3><i class="fa-solid fa-gears"></i> DevOps & Automatisation</h3>
+          <h3><i class="fa-solid fa-gears"></i> <span data-i18n="skills_devops">DevOps & Automatisation</span></h3>
           <div class="skill-tags">
             <span class="skill-tag">Docker</span>
             <span class="skill-tag">CI/CD</span>
@@ -188,7 +192,7 @@
         </div>
 
         <div class="skill-group">
-          <h3><i class="fa-solid fa-terminal"></i> Scripting & Analyse</h3>
+          <h3><i class="fa-solid fa-terminal"></i> <span data-i18n="skills_scripting">Scripting & Analyse</span></h3>
           <div class="skill-tags">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">Bash/Shell</span>
@@ -204,12 +208,12 @@
   <!-- ========== ACTIVITIES & LANGUAGES ========== -->
   <section id="activities" class="section">
     <div class="container">
-      <h2 class="section-title fade-in"><span class="accent">#</span> Activities & Languages</h2>
+      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="activities_title">Parcours</span></h2>
       <div class="activities-grid">
 
         <!-- Formation -->
         <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-graduation-cap"></i> Formation</h3>
+          <h3><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="activities_education">Formation</span></h3>
           <div class="activity-item">
             <h4>École Nationale des Sciences Appliquées (ENSAO)</h4>
             <p>Diplôme d'Ingénieur d'État en Cybersécurité — 4ème année<br>2022 – Présent</p>
@@ -218,7 +222,7 @@
 
         <!-- Certifications -->
         <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
+          <h3><i class="fa-solid fa-certificate"></i> <span data-i18n="activities_certifications">Certifications</span></h3>
           <ul>
             <li>Python for Cybersecurity Specialization — INFOSEC</li>
             <li>API Pentesting — APIsec University</li>
@@ -228,7 +232,7 @@
 
         <!-- Languages -->
         <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-language"></i> Langues</h3>
+          <h3><i class="fa-solid fa-language"></i> <span data-i18n="activities_languages">Langues</span></h3>
           <div class="language-list">
             <div class="language-item">
               <span class="language-name">Français</span>
@@ -255,16 +259,16 @@
   <!-- ========== CONTACT ========== -->
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title fade-in"><span class="accent">#</span> Get In Touch</h2>
+      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="contact_title">Contact</span></h2>
       <div class="contact-content fade-in">
-        <p class="contact-text">
+        <p class="contact-text" data-i18n="contact_text">
           Je recherche actuellement un <strong>stage PFA en cybersécurité / sécurité applicative</strong> pour l'été 2026.<br>
           Pour toute opportunité, question ou échange sur la sécurité, n'hésitez pas à me contacter !
         </p>
         <div class="contact-links">
-          <a href="mailto:hamzahanich14@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
-          <a href="https://github.com/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
-          <a href="https://linkedin.com/in/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:hamzahanich14@gmail.com" class="btn btn-primary" data-i18n="contact_email"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="https://github.com/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="contact_github"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://linkedin.com/in/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="contact_linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </div>
       </div>
     </div>
