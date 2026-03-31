@@ -75,15 +75,13 @@
           <div class="terminal-body">
             <p><span class="terminal-prompt">$</span> cat about.txt</p>
             <p class="terminal-output">
-              Cloud / DevOps engineering student with hands-on experience in CI/CD,
-              Docker, Kubernetes, and Linux automation. I build reliable pipelines,
-              deploy containerized applications, and troubleshoot infrastructure
-              environments with a security-first mindset.
+              Étudiant en 4ᵉ année d’ingénierie en cybersécurité, passionné par la sécurité applicative et l’analyse de vulnérabilités.<br>
+              Je recherche un stage PFA (Été 2026) pour contribuer à des missions concrètes en sécurité et développer mes compétences sur des problématiques réelles.<br>
+              Rigoureux, autonome, et motivé par l’apprentissage continu.
             </p>
             <p class="terminal-output">
-              Currently seeking a PFA internship in Cloud / DevOps to apply my
-              skills in a real-world production environment. Rigorous, autonomous,
-              and always learning.
+              Compétences : DevOps (Docker, CI/CD, Linux), Sécurité AppSec & Réseau (STRIDE, SAST/DAST/SCA, Fuzzing), Scripting (Python, Bash), Analyse de logs, Automatisation.<br>
+              Langues : Français, Anglais, Arabe.
             </p>
             <p><span class="terminal-prompt">$</span> <span class="cursor-blink">_</span></p>
           </div>
@@ -98,51 +96,60 @@
       <h2 class="section-title fade-in"><span class="accent">#</span> Projects</h2>
       <div class="projects-grid">
 
-        <!-- Project 1 -->
+        <!-- Project 1: Système Automatisé de Détection d'Anomalies pour APIs REST -->
         <div class="project-card fade-in">
           <div class="project-header">
-            <i class="fa-solid fa-diagram-project project-icon"></i>
-            <h3>Automated CI/CD Pipeline</h3>
+            <i class="fa-solid fa-network-wired project-icon"></i>
+            <h3>Système Automatisé de Détection d'Anomalies pour APIs REST</h3>
           </div>
           <div class="project-tags">
-            <span class="tag">Jenkins</span>
+            <span class="tag">Python</span>
+            <span class="tag">LLaMa</span>
             <span class="tag">Docker</span>
-            <span class="tag">Kubernetes</span>
-            <span class="tag">Maven</span>
-            <span class="tag">Trivy</span>
-            <span class="tag">Git</span>
           </div>
           <ul class="project-details">
-            <li>Built a full CI/CD pipeline triggered by Git pushes via Jenkins</li>
-            <li>Automated Maven builds and Docker image creation</li>
-            <li>Deployed containerized apps on Kubernetes (Minikube)</li>
-            <li>Integrated Trivy for container vulnerability scanning</li>
-            <li>Investigated & resolved pipeline errors (Docker, YAML, builds)</li>
-            <li>Administered Jenkins & Docker on a Linux machine</li>
+            <li>Extraction et structuration des caractéristiques réseau depuis des logs bruts pour différencier le trafic légitime des attaques complexes.</li>
+            <li>Intégration et fine-tuning d’un modèle IA (LLaMa) via des scripts Python pour automatiser la détection des payloads malveillants (fuzzing) et réduire les faux positifs.</li>
+            <li>Conteneurisation de l’environnement d’analyse et rédaction de documentation technique en anglais pour les tests fonctionnels.</li>
           </ul>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 2: Pipeline CI/CD d'Analyse Automatisée de Vulnérabilités -->
         <div class="project-card fade-in">
           <div class="project-header">
-            <i class="fa-solid fa-cloud project-icon"></i>
-            <h3>Cloud Infrastructure & Automated Deployment</h3>
+            <i class="fa-solid fa-shield-halved project-icon"></i>
+            <h3>Pipeline CI/CD d'Analyse Automatisée de Vulnérabilités</h3>
           </div>
           <div class="project-tags">
-            <span class="tag">Docker</span>
-            <span class="tag">Nginx</span>
-            <span class="tag">Linux</span>
-            <span class="tag">SSH</span>
+            <span class="tag">GitHub Actions</span>
             <span class="tag">Bash</span>
-            <span class="tag">Git</span>
+            <span class="tag">Trivy</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Bandit</span>
           </div>
           <ul class="project-details">
-            <li>Deployed a containerized application on Linux with Docker & Nginx</li>
-            <li>Automated deployment from Git with custom scripts</li>
-            <li>Hardened servers: SSH key auth, firewall rules</li>
-            <li>Set up monitoring & logging for service availability</li>
-            <li>Diagnosed network, service & container connectivity issues</li>
-            <li>Practiced system hardening & infrastructure troubleshooting</li>
+            <li>Conception d’un pipeline CI/CD avec GitHub Actions pour automatiser les tests de sécurité à chaque validation de code.</li>
+            <li>Intégration d’outils open-source (Trivy, Bandit) via des scripts Shell pour scanner automatiquement les images Docker et le code source.</li>
+            <li>Blocage des déploiements en cas de failles critiques et génération automatique de rapports d’audit.</li>
+          </ul>
+        </div>
+
+        <!-- Project 3: Outil d’Analyse de Sécurité Réseau pour Android -->
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <i class="fa-brands fa-android project-icon"></i>
+            <h3>Outil d’Analyse de Sécurité Réseau pour Android</h3>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">Sécurité Mobile</span>
+            <span class="tag">Analyse Statique</span>
+          </div>
+          <ul class="project-details">
+            <li>Création d’un utilitaire pour extraire automatiquement les fichiers de Configuration de Sécurité Réseau (NSC) à partir d’APKs compilés.</li>
+            <li>Analyse des fichiers NSC extraits pour détecter de potentielles mauvaises configurations exposant les applications à des failles de sécurité réseau.</li>
+            <li>Évaluation de la prévalence de ces vulnérabilités sur un dataset d’applications réelles (APKs marocains et F-Droid) et discussion des résultats.</li>
           </ul>
         </div>
 
@@ -157,34 +164,36 @@
       <div class="skills-grid fade-in">
 
         <div class="skill-group">
-          <h3><i class="fa-solid fa-cloud"></i> Cloud / DevOps</h3>
+          <h3><i class="fa-solid fa-shield-halved"></i> Sécurité AppSec & Réseau</h3>
           <div class="skill-tags">
-            <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">Jenkins</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Kubernetes</span>
-            <span class="skill-tag">Minikube</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Bash</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3><i class="fa-solid fa-server"></i> Systems</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Linux (Ubuntu)</span>
-            <span class="skill-tag">Nginx</span>
-            <span class="skill-tag">VirtualBox</span>
-            <span class="skill-tag">SSH</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3><i class="fa-solid fa-shield-halved"></i> Security</h3>
-          <div class="skill-tags">
+            <span class="skill-tag">STRIDE</span>
+            <span class="skill-tag">SAST/DAST/SCA</span>
+            <span class="skill-tag">Fuzzing</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Analyse de trafic</span>
             <span class="skill-tag">Trivy</span>
-            <span class="skill-tag">Linux Hardening</span>
-            <span class="skill-tag">Firewall</span>
+            <span class="skill-tag">Bandit</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-gears"></i> DevOps & Automatisation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Automatisation de workflows</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-terminal"></i> Scripting & Analyse</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Bash/Shell</span>
+            <span class="skill-tag">Traitement de logs</span>
+            <span class="skill-tag">Automatisation d’outils de sécurité</span>
           </div>
         </div>
 
@@ -198,37 +207,43 @@
       <h2 class="section-title fade-in"><span class="accent">#</span> Activities & Languages</h2>
       <div class="activities-grid">
 
-        <!-- Activities -->
+        <!-- Formation -->
         <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-people-group"></i> Activities & Volunteering</h3>
+          <h3><i class="fa-solid fa-graduation-cap"></i> Formation</h3>
           <div class="activity-item">
-            <h4>Graphic Designer</h4>
-            <p>Google Developer Student Club & Sports Club — Teamwork, visual communication, event material creation.</p>
+            <h4>École Nationale des Sciences Appliquées (ENSAO)</h4>
+            <p>Diplôme d'Ingénieur d'État en Cybersécurité — 4ème année<br>2022 – Présent</p>
           </div>
-          <div class="activity-item">
-            <h4>Volunteer</h4>
-            <p>Solidarity Club — Community actions & event organization.</p>
-          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="activity-card fade-in">
+          <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
+          <ul>
+            <li>Python for Cybersecurity Specialization — INFOSEC</li>
+            <li>API Pentesting — APIsec University</li>
+            <li>API Security Fundamentals — APIsec University</li>
+          </ul>
         </div>
 
         <!-- Languages -->
         <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-language"></i> Languages</h3>
+          <h3><i class="fa-solid fa-language"></i> Langues</h3>
           <div class="language-list">
             <div class="language-item">
-              <span class="language-name">Arabic</span>
-              <span class="language-level">Native</span>
-              <div class="language-bar"><div class="language-fill" style="width:100%"></div></div>
+              <span class="language-name">Français</span>
+              <span class="language-level">Courant</span>
+              <div class="language-bar"><div class="language-fill" style="width:90%"></div></div>
             </div>
             <div class="language-item">
-              <span class="language-name">French</span>
-              <span class="language-level">Professional</span>
+              <span class="language-name">Anglais</span>
+              <span class="language-level">Courant</span>
               <div class="language-bar"><div class="language-fill" style="width:85%"></div></div>
             </div>
             <div class="language-item">
-              <span class="language-name">English</span>
-              <span class="language-level">Fluent</span>
-              <div class="language-bar"><div class="language-fill" style="width:80%"></div></div>
+              <span class="language-name">Arabe</span>
+              <span class="language-level">Courant</span>
+              <div class="language-bar"><div class="language-fill" style="width:100%"></div></div>
             </div>
           </div>
         </div>
@@ -243,8 +258,8 @@
       <h2 class="section-title fade-in"><span class="accent">#</span> Get In Touch</h2>
       <div class="contact-content fade-in">
         <p class="contact-text">
-          I'm currently looking for a <strong>PFA internship in Cloud / DevOps</strong>.
-          Whether you have a question or just want to say hi, feel free to reach out!
+          Je recherche actuellement un <strong>stage PFA en cybersécurité / sécurité applicative</strong> pour l'été 2026.<br>
+          Pour toute opportunité, question ou échange sur la sécurité, n'hésitez pas à me contacter !
         </p>
         <div class="contact-links">
           <a href="mailto:hamzahanich14@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
