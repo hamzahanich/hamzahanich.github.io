@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamza Hanich — Cloud / DevOps Engineer</title>
-  <meta name="description" content="Portfolio of Hamza Hanich — Cloud/DevOps Engineering Student specializing in CI/CD, Docker, Kubernetes & Linux automation." />
+  <title>Hamza Hanich — Élève ingénieur en cybersécurité</title>
+  <meta name="description" content="Portfolio de Hamza Hanich — élève ingénieur en cybersécurité spécialisé en DevSecOps, sécurité cloud-native, SecOps, supervision et automatisation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
   <!-- ========== NAV ========== -->
   <nav id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">&lt;HH /&gt;</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <a href="#hero" class="nav-logo">hamza<span class="accent">.sec</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about" data-i18n="nav_about">À propos</a></li>
         <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
         <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
-        <li><a href="#activities" data-i18n="nav_activities">Parcours</a></li>
+        <li><a href="#activities" data-i18n="nav_activities">Expérience</a></li>
         <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
         <li>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
             <i class="fa-solid fa-moon"></i>
           </button>
         </li>
         <li>
-          <button class="lang-toggle" id="langToggle" aria-label="Changer la langue">
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Changer la langue">
             <span id="langLabel">FR</span>
           </button>
         </li>
@@ -40,27 +42,42 @@
     </div>
   </nav>
 
+  <main id="main-content">
+
   <!-- ========== HERO ========== -->
   <section id="hero">
-    <div class="hero-content fade-in">
-      <div class="hero-photo-wrapper">
-        <!-- Replace with your photo: save as assets/img/photo.jpg -->
-        <img src="assets/img/photo.jpg" alt="Hamza Hanich" class="hero-photo" onerror="this.style.display='none'" />
+    <div class="container">
+      <div class="hero-content fade-in">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="hero_location">Oujda, Maroc · Mobilité Maroc · Disponible pour un stage PFE</span>
+          </div>
+          <p class="hero-greeting" data-i18n="hero_hi">Bonjour, je suis</p>
+          <h1 class="hero-name">Hamza Hanich</h1>
+          <div class="hero-title">
+            <span>&gt;&nbsp;</span><span id="typed-text"></span><span class="cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            Élève ingénieur en 5ᵉ année à l’ENSAO, orienté systèmes résilients, DevSecOps cloud-native et détection de menaces.
+          </p>
+          <div class="hero-actions">
+            <a href="assets/moncv.pdf" download class="btn btn-primary" data-i18n="hero_cv"><i class="fa-solid fa-download"></i> Télécharger le CV</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="nav_contact">Contact</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/hamzahanich" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/hamza-hanich" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:hamzahanich14@gmail.com" title="Email" aria-label="Send an email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+212695208609" title="Phone" aria-label="Call Hamza Hanich"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-photo-card">
+            <img src="assets/img/photo.jpg" alt="Hamza Hanich" class="hero-photo" />
+          </div>
+        </div>
       </div>
-      <p class="hero-greeting" data-i18n="hero_hi">Bonjour, je suis</p>
-      <h1 class="hero-name">Hamza Hanich</h1>
-      <p class="hero-title">
-        <span class="terminal-prompt">&gt;&nbsp;</span>
-        <span id="typed-text"></span><span class="cursor">|</span>
-      </p>
-      <p class="hero-location" data-i18n="hero_location"><i class="fa-solid fa-location-dot"></i> Oujda, Maroc</p>
-      <div class="hero-links">
-        <a href="https://github.com/hamzahanich" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/hamzahanich" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:hamzahanich14@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="tel:+212695208609" title="Phone"><i class="fa-solid fa-phone"></i></a>
-      </div>
-      <a href="assets/moncv.pdf" download class="btn btn-primary" data-i18n="hero_cv"><i class="fa-solid fa-download"></i> Télécharger le CV</a>
     </div>
   </section>
 
@@ -68,29 +85,114 @@
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="about_title">À propos de moi</span></h2>
-      <div class="about-content fade-in">
-        <div class="terminal-window">
-          <div class="terminal-header">
-            <span class="terminal-dot red"></span>
-            <span class="terminal-dot yellow"></span>
-            <span class="terminal-dot green"></span>
-            <span class="terminal-title">about.sh</span>
+      <div class="about-card fade-in">
+        <p class="about-main-text" data-i18n="about_main">
+          Curieux et motivé par l’envie de construire des systèmes résilients et sécurisés by design.<br>
+          Je me spécialise en DevSecOps, sécurité cloud-native et détection de menaces.<br>
+          Je cherche un stage PFE de 6 mois au Maroc, de février à juillet 2027.
+        </p>
+        <p class="about-skills-text" data-i18n="about_skills">
+          Profil : élève ingénieur en cybersécurité, orienté systèmes résilients, automatisation et sécurité opérationnelle.<br>
+          Formation : ENSAO — Sécurité des Systèmes d’Information et Cybersécurité, 2022–présent.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED EXPERIENCE (THALES) ========== -->
+  <section id="activities" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="activities_title">Expérience & parcours</span></h2>
+      
+      <div class="experience-section">
+        <article class="experience-card fade-in">
+          <div class="experience-header">
+            <div class="experience-title-group">
+              <div class="experience-icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <span class="experience-eyebrow" data-i18n="experience_eyebrow">Expérience phare</span>
+                <h3 class="experience-company">Thales Cyber and Digital</h3>
+                <p class="experience-role" data-i18n="experience_role">Solution de supervision IT pour les serveurs internes de test et d’intégration</p>
+              </div>
+            </div>
+            <div class="experience-meta">
+              <span class="experience-tag" data-i18n="experience_dates">Juil. 2026 – Août 2026</span>
+              <span data-i18n="experience_location">Rabat, Maroc · Sur site</span>
+            </div>
           </div>
-          <div class="terminal-body">
-            <p><span class="terminal-prompt">$</span> cat about.txt</p>
-            <p class="terminal-output" data-i18n="about_main">
-              Étudiant en 4ᵉ année d’ingénierie en cybersécurité, passionné par la sécurité applicative et l’analyse de vulnérabilités.<br>
-              Je recherche un stage PFA (Été 2026) pour contribuer à des missions concrètes en sécurité et développer mes compétences sur des problématiques réelles.<br>
-              Rigoureux, autonome, et motivé par l’apprentissage continu.
-            </p>
-            <p class="terminal-output" data-i18n="about_skills">
-              Compétences : DevOps (Docker, CI/CD, Linux), Sécurité AppSec & Réseau (STRIDE, SAST/DAST/SCA, Fuzzing), Scripting (Python, Bash), Analyse de logs, Automatisation.<br>
-              Langues : Français, Anglais, Arabe.
-            </p>
-            <p><span class="terminal-prompt">$</span> <span class="cursor-blink">_</span></p>
+
+          <div class="experience-body">
+            <div class="experience-copy">
+              <p class="experience-lede" data-i18n="experience_lede">Une mission terrain au cœur de la supervision, de la fiabilité et du durcissement d’une infrastructure critique de test.</p>
+              <ul class="experience-bullets">
+                <li data-i18n="experience_1">Conception et déploiement d’une plateforme Prometheus/Grafana couvrant 7 serveurs physiques, avec dashboards temps réel et alerting.</li>
+                <li data-i18n="experience_2">Validation sur 5 scénarios de pannes réelles avant le déploiement sur l’ensemble du parc.</li>
+                <li data-i18n="experience_3">Durcissement TLS, authentification, règles de pare-feu, permissions NTFS et alertes de détection de menaces.</li>
+                <li data-i18n="experience_4">Automatisation du provisionnement avec Terraform : réduction de 45–60 minutes à environ 3 minutes.</li>
+              </ul>
+            </div>
+
+            <div class="experience-metrics" aria-label="Résultats clés">
+              <div class="metric-box">
+                <div class="metric-value">7</div>
+                <div class="metric-label" data-i18n="experience_metric_servers">serveurs physiques supervisés</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">5</div>
+                <div class="metric-label" data-i18n="experience_metric_failures">scénarios de pannes validés</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">45–60 → ~3 min</div>
+                <div class="metric-label" data-i18n="experience_metric_terraform">provisionnement automatisé avec Terraform</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="activities-grid">
+        <!-- Formation -->
+        <div class="activity-card fade-in">
+          <h3><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="activities_education">Formation</span></h3>
+          <div class="activity-item">
+            <h4>École Nationale des Sciences Appliquées (ENSAO)</h4>
+            <p data-i18n="activities_education_details">Diplôme d’Ingénieur d’État — Sécurité des Systèmes d’Information et Cybersécurité<br>2022 – Présent · Oujda, Maroc<br>Modules : Cloud Computing, sécurité des services &amp; protocoles, systèmes Unix/Windows, pentesting, audit &amp; risques, forensics, machine learning, cryptographie avancée.</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="activity-card fade-in">
+          <h3><i class="fa-solid fa-certificate"></i> <span data-i18n="activities_certifications">Certifications</span></h3>
+          <ul class="cert-list">
+            <li>Microsoft Certified: Security Operations Analyst Associate (SC-200) — en cours de préparation</li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="activity-card fade-in">
+          <h3><i class="fa-solid fa-language"></i> <span data-i18n="activities_languages">Langues</span></h3>
+          <div class="language-list">
+            <div class="language-item">
+              <span class="language-name">Français</span>
+              <span class="language-level">Courant / Pro</span>
+              <div class="language-bar"><div class="language-fill" style="width:90%"></div></div>
+            </div>
+            <div class="language-item">
+              <span class="language-name">Anglais</span>
+              <span class="language-level">Courant / Pro</span>
+              <div class="language-bar"><div class="language-fill" style="width:85%"></div></div>
+            </div>
+            <div class="language-item">
+              <span class="language-name">Arabe</span>
+              <span class="language-level">Maternelle</span>
+              <div class="language-bar"><div class="language-fill" style="width:100%"></div></div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -100,60 +202,44 @@
       <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="projects_title">Projets</span></h2>
       <div class="projects-grid">
 
-        <!-- Project 1: Système Automatisé de Détection d'Anomalies pour APIs REST -->
-        <div class="project-card fade-in">
-          <div class="project-header">
-            <i class="fa-solid fa-network-wired project-icon"></i>
-            <h3 data-i18n="project1_title">Système Automatisé de Détection d'Anomalies pour APIs REST</h3>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">LLaMa</span>
-            <span class="tag">Docker</span>
-          </div>
-          <ul class="project-details">
-            <li data-i18n="project1_1">Extraction et structuration des caractéristiques réseau depuis des logs bruts pour différencier le trafic légitime des attaques complexes.</li>
-            <li data-i18n="project1_2">Intégration et fine-tuning d’un modèle IA (LLaMa) via des scripts Python pour automatiser la détection des payloads malveillants (fuzzing) et réduire les faux positifs.</li>
-            <li data-i18n="project1_3">Conteneurisation de l’environnement d’analyse et rédaction de documentation technique en anglais pour les tests fonctionnels.</li>
-          </ul>
-        </div>
-
-        <!-- Project 2: Pipeline CI/CD d'Analyse Automatisée de Vulnérabilités -->
+        <!-- Project 1: Plateforme DevSecOps Cloud-Native -->
         <div class="project-card fade-in">
           <div class="project-header">
             <i class="fa-solid fa-shield-halved project-icon"></i>
-            <h3 data-i18n="project2_title">Pipeline CI/CD d'Analyse Automatisée de Vulnérabilités</h3>
+            <h3 data-i18n="project1_title">Plateforme DevSecOps Cloud-Native & Sécurité Runtime</h3>
           </div>
           <div class="project-tags">
+            <span class="tag">Kubernetes / k3s</span>
             <span class="tag">GitHub Actions</span>
-            <span class="tag">Bash</span>
+            <span class="tag">Kyverno</span>
+            <span class="tag">Cilium Tetragon / eBPF</span>
             <span class="tag">Trivy</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Bandit</span>
+            <span class="tag">Syft</span>
+            <span class="tag">Cosign</span>
+            <span class="tag">Prometheus / Grafana</span>
           </div>
           <ul class="project-details">
-            <li data-i18n="project2_1">Conception d’un pipeline CI/CD avec GitHub Actions pour automatiser les tests de sécurité à chaque validation de code.</li>
-            <li data-i18n="project2_2">Intégration d’outils open-source (Trivy, Bandit) via des scripts Shell pour scanner automatiquement les images Docker et le code source.</li>
-            <li data-i18n="project2_3">Blocage des déploiements en cas de failles critiques et génération automatique de rapports d’audit.</li>
+            <li data-i18n="project1_1">Pipeline CI/CD GitHub Actions avec scan des vulnérabilités et secrets (Trivy), génération de SBOM (Syft) et signature cryptographique des conteneurs (Cosign).</li>
+            <li data-i18n="project1_2">Politiques Zero Trust avec Kyverno sur k3s : blocage des images non signées, des conteneurs root et verrouillage du système de fichiers en lecture seule.</li>
+            <li data-i18n="project1_3">Détection runtime eBPF avec Cilium Tetragon, observabilité Prometheus/Grafana et isolation automatique des pods suspects via NetworkPolicies.</li>
           </ul>
         </div>
 
-        <!-- Project 3: Outil d’Analyse de Sécurité Réseau pour Android -->
+        <!-- Project 2: Détection d'anomalies pour APIs REST par IA -->
         <div class="project-card fade-in">
           <div class="project-header">
-            <i class="fa-brands fa-android project-icon"></i>
-            <h3 data-i18n="project3_title">Outil d’Analyse de Sécurité Réseau pour Android</h3>
+            <i class="fa-solid fa-brain project-icon"></i>
+            <h3 data-i18n="project2_title">Détection d’anomalies pour APIs REST par IA</h3>
           </div>
           <div class="project-tags">
             <span class="tag">Python</span>
-            <span class="tag">Bash</span>
-            <span class="tag">Sécurité Mobile</span>
-            <span class="tag">Analyse Statique</span>
+            <span class="tag">LLaMA / QLoRA</span>
+            <span class="tag">Docker</span>
+            <span class="tag">OWASP API Top 10</span>
           </div>
           <ul class="project-details">
-            <li data-i18n="project3_1">Création d’un utilitaire pour extraire automatiquement les fichiers de Configuration de Sécurité Réseau (NSC) à partir d’APKs compilés.</li>
-            <li data-i18n="project3_2">Analyse des fichiers NSC extraits pour détecter de potentielles mauvaises configurations exposant les applications à des failles de sécurité réseau.</li>
-            <li data-i18n="project3_3">Évaluation de la prévalence de ces vulnérabilités sur un dataset d’applications réelles (APKs marocains et F-Droid) et discussion des résultats.</li>
+            <li data-i18n="project2_1">Fine-tuning d’un modèle LLaMA avec QLoRA sur des jeux de données de journaux réseau structurés pour identifier les charges utiles malveillantes et les signatures de fuzzing.</li>
+            <li data-i18n="project2_2">Ingénierie des fonctionnalités de télémétrie HTTP pour améliorer la détection d’anomalies, directement cartographiée sur l’OWASP API Top 10.</li>
           </ul>
         </div>
 
@@ -168,87 +254,75 @@
       <div class="skills-grid fade-in">
 
         <div class="skill-group">
-          <h3><i class="fa-solid fa-shield-halved"></i> <span data-i18n="skills_appsec">Sécurité AppSec & Réseau</span></h3>
+          <h3><i class="fa-solid fa-cloud"></i> <span data-i18n="skills_devops">Sécurité Cloud-Native & DevSecOps</span></h3>
           <div class="skill-tags">
-            <span class="skill-tag">STRIDE</span>
-            <span class="skill-tag">SAST/DAST/SCA</span>
-            <span class="skill-tag">Fuzzing</span>
-            <span class="skill-tag">Postman</span>
-            <span class="skill-tag">Analyse de trafic</span>
-            <span class="skill-tag">Trivy</span>
-            <span class="skill-tag">Bandit</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3><i class="fa-solid fa-gears"></i> <span data-i18n="skills_devops">DevOps & Automatisation</span></h3>
-          <div class="skill-tags">
+            <span class="skill-tag">Kubernetes (k3s)</span>
             <span class="skill-tag">Docker</span>
-            <span class="skill-tag">CI/CD</span>
             <span class="skill-tag">GitHub Actions</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Automatisation de workflows</span>
+            <span class="skill-tag">Kyverno</span>
+            <span class="skill-tag">Cilium Tetragon / eBPF</span>
+            <span class="skill-tag">Cosign / Syft</span>
+            <span class="skill-tag">Trivy</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h3><i class="fa-solid fa-terminal"></i> <span data-i18n="skills_scripting">Scripting & Analyse</span></h3>
+          <h3><i class="fa-solid fa-crosshairs"></i> <span data-i18n="skills_secops">Opérations de sécurité (SecOps)</span></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Microsoft Sentinel</span>
+            <span class="skill-tag">Defender XDR</span>
+            <span class="skill-tag">KQL / Threat Hunting</span>
+            <span class="skill-tag">Wazuh</span>
+            <span class="skill-tag">Sysmon / Suricata</span>
+            <span class="skill-tag">MITRE ATT&amp;CK</span>
+            <span class="skill-tag">Réponse aux incidents</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-chart-line"></i> <span data-i18n="skills_monitoring">Supervision, MCO & Télémétrie</span></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Alertmanager</span>
+            <span class="skill-tag">Windows Exporter</span>
+            <span class="skill-tag">OpenTelemetry</span>
+            <span class="skill-tag">Dashboards temps réel</span>
+            <span class="skill-tag">MCO</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-server"></i> <span data-i18n="skills_systems">Systèmes, Infrastructure & Durcissement</span></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Terraform (IaC)</span>
+            <span class="skill-tag">Debian / Ubuntu</span>
+            <span class="skill-tag">Windows Server</span>
+            <span class="skill-tag">TLS / Pare-feu / NTFS</span>
+            <span class="skill-tag">TCP/IP / DNS</span>
+            <span class="skill-tag">Reverse Proxy</span>
+            <span class="skill-tag">Hyper-V</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-shield-halved"></i> <span data-i18n="skills_appsec">Sécurité Applicative & IA</span></h3>
+          <div class="skill-tags">
+            <span class="skill-tag">OWASP Top 10 / API Top 10</span>
+            <span class="skill-tag">LLaMA / QLoRA</span>
+            <span class="skill-tag">Analyse de flux HTTP</span>
+            <span class="skill-tag">Audit d’API REST</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-terminal"></i> <span data-i18n="skills_scripting">Programmation & Automatisation</span></h3>
           <div class="skill-tags">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">Bash/Shell</span>
-            <span class="skill-tag">Traitement de logs</span>
-            <span class="skill-tag">Automatisation d’outils de sécurité</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ACTIVITIES & LANGUAGES ========== -->
-  <section id="activities" class="section">
-    <div class="container">
-      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="activities_title">Parcours</span></h2>
-      <div class="activities-grid">
-
-        <!-- Formation -->
-        <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="activities_education">Formation</span></h3>
-          <div class="activity-item">
-            <h4>École Nationale des Sciences Appliquées (ENSAO)</h4>
-            <p>Diplôme d'Ingénieur d'État en Cybersécurité — 4ème année<br>2022 – Présent</p>
-          </div>
-        </div>
-
-        <!-- Certifications -->
-        <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-certificate"></i> <span data-i18n="activities_certifications">Certifications</span></h3>
-          <ul>
-            <li>Python for Cybersecurity Specialization — INFOSEC</li>
-            <li>API Pentesting — APIsec University</li>
-            <li>API Security Fundamentals — APIsec University</li>
-          </ul>
-        </div>
-
-        <!-- Languages -->
-        <div class="activity-card fade-in">
-          <h3><i class="fa-solid fa-language"></i> <span data-i18n="activities_languages">Langues</span></h3>
-          <div class="language-list">
-            <div class="language-item">
-              <span class="language-name">Français</span>
-              <span class="language-level">Courant</span>
-              <div class="language-bar"><div class="language-fill" style="width:90%"></div></div>
-            </div>
-            <div class="language-item">
-              <span class="language-name">Anglais</span>
-              <span class="language-level">Courant</span>
-              <div class="language-bar"><div class="language-fill" style="width:85%"></div></div>
-            </div>
-            <div class="language-item">
-              <span class="language-name">Arabe</span>
-              <span class="language-level">Courant</span>
-              <div class="language-bar"><div class="language-fill" style="width:100%"></div></div>
-            </div>
+            <span class="skill-tag">PowerShell</span>
+            <span class="skill-tag">KQL</span>
+            <span class="skill-tag">Git</span>
           </div>
         </div>
 
@@ -259,25 +333,27 @@
   <!-- ========== CONTACT ========== -->
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title fade-in"><span class="accent">#</span> <span data-i18n="contact_title">Contact</span></h2>
       <div class="contact-content fade-in">
+        <h2 class="section-title" style="justify-content: center; margin-bottom: 24px;"><span class="accent">#</span> <span data-i18n="contact_title">Contact</span></h2>
         <p class="contact-text" data-i18n="contact_text">
-          Je recherche actuellement un <strong>stage PFA en cybersécurité / sécurité applicative</strong> pour l'été 2026.<br>
-          Pour toute opportunité, question ou échange sur la sécurité, n'hésitez pas à me contacter !
+          Je recherche actuellement un <strong>stage PFE de 6 mois au Maroc</strong>, de février à juillet 2027.<br>
+          DevSecOps, sécurité cloud-native, SecOps ou détection de menaces : parlons de votre sujet !
         </p>
         <div class="contact-links">
           <a href="mailto:hamzahanich14@gmail.com" class="btn btn-primary" data-i18n="contact_email"><i class="fa-solid fa-envelope"></i> Email</a>
-          <a href="https://github.com/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="contact_github"><i class="fa-brands fa-github"></i> GitHub</a>
-          <a href="https://linkedin.com/in/hamzahanich" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="contact_linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/hamzahanich" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="contact_github"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://linkedin.com/in/hamza-hanich" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="contact_linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </div>
       </div>
     </div>
   </section>
 
+  </main>
+
   <!-- ========== FOOTER ========== -->
   <footer>
     <div class="container">
-      <p>&lt; Built by <span class="accent">Hamza Hanich</span> /&gt; &mdash; 2026</p>
+      <p>&lt; Built with precision by <span class="accent" style="color: var(--accent); font-weight: 600;">Hamza Hanich</span> /&gt; &mdash; 2026</p>
     </div>
   </footer>
 

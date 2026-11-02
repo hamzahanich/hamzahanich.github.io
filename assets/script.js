@@ -11,37 +11,52 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_about: 'À propos',
       nav_projects: 'Projets',
       nav_skills: 'Compétences',
-      nav_activities: 'Parcours',
+      nav_activities: 'Expérience',
       nav_contact: 'Contact',
+      theme_use_dark: 'Activer le thème sombre',
+      theme_use_light: 'Activer le thème clair',
+      lang_switch_en: 'Passer à l’anglais',
+      lang_switch_fr: 'Passer au français',
       hero_hi: 'Bonjour, je suis',
-      hero_location: '<i class="fa-solid fa-location-dot"></i> Oujda, Maroc',
+      hero_location: '<i class="fa-solid fa-location-dot"></i> Oujda, Maroc · Mobilité Maroc · Disponible pour un stage PFE',
       hero_cv: '<i class="fa-solid fa-download"></i> Télécharger le CV',
       about_title: 'À propos de moi',
-      about_main: "Étudiant en 4ᵉ année d’ingénierie en cybersécurité, passionné par la sécurité applicative et l’analyse de vulnérabilités.<br>Je recherche un stage PFA (Été 2026) pour contribuer à des missions concrètes en sécurité et développer mes compétences sur des problématiques réelles.<br>Rigoureux, autonome, et motivé par l’apprentissage continu.",
-      about_skills: 'Compétences : DevOps (Docker, CI/CD, Linux), Sécurité AppSec & Réseau (STRIDE, SAST/DAST/SCA, Fuzzing), Scripting (Python, Bash), Analyse de logs, Automatisation.<br>Langues : Français, Anglais, Arabe.',
+      about_main: "Curieux et motivé par l’envie de construire des systèmes résilients et sécurisés by design.<br>Je me spécialise en DevSecOps, sécurité cloud-native et détection de menaces.<br>Je cherche un stage PFE de 6 mois au Maroc, de février à juillet 2027.",
+      about_skills: 'Profil : élève ingénieur en cybersécurité, orienté systèmes résilients, automatisation et sécurité opérationnelle.<br>Formation : ENSAO — Sécurité des Systèmes d’Information et Cybersécurité, 2022–présent.',
       projects_title: 'Projets',
-      project1_title: "Système Automatisé de Détection d'Anomalies pour APIs REST",
-      project1_1: "Extraction et structuration des caractéristiques réseau depuis des logs bruts pour différencier le trafic légitime des attaques complexes.",
-      project1_2: "Intégration et fine-tuning d’un modèle IA (LLaMa) via des scripts Python pour automatiser la détection des payloads malveillants (fuzzing) et réduire les faux positifs.",
-      project1_3: "Conteneurisation de l’environnement d’analyse et rédaction de documentation technique en anglais pour les tests fonctionnels.",
-      project2_title: "Pipeline CI/CD d'Analyse Automatisée de Vulnérabilités",
-      project2_1: "Conception d’un pipeline CI/CD avec GitHub Actions pour automatiser les tests de sécurité à chaque validation de code.",
-      project2_2: "Intégration d’outils open-source (Trivy, Bandit) via des scripts Shell pour scanner automatiquement les images Docker et le code source.",
-      project2_3: "Blocage des déploiements en cas de failles critiques et génération automatique de rapports d’audit.",
-      project3_title: "Outil d’Analyse de Sécurité Réseau pour Android",
-      project3_1: "Création d’un utilitaire pour extraire automatiquement les fichiers de Configuration de Sécurité Réseau (NSC) à partir d’APKs compilés.",
-      project3_2: "Analyse des fichiers NSC extraits pour détecter de potentielles mauvaises configurations exposant les applications à des failles de sécurité réseau.",
-      project3_3: "Évaluation de la prévalence de ces vulnérabilités sur un dataset d’applications réelles (APKs marocains et F-Droid) et discussion des résultats.",
+      project1_title: 'Plateforme DevSecOps Cloud-Native & Sécurité Runtime',
+      project1_1: 'Pipeline CI/CD GitHub Actions avec scan des vulnérabilités et secrets (Trivy), génération de SBOM (Syft) et signature cryptographique des conteneurs (Cosign).',
+      project1_2: 'Politiques Zero Trust avec Kyverno sur k3s : blocage des images non signées, des conteneurs root et verrouillage du système de fichiers en lecture seule.',
+      project1_3: 'Détection runtime eBPF avec Cilium Tetragon, observabilité Prometheus/Grafana et isolation automatique des pods suspects via NetworkPolicies.',
+      project2_title: 'Détection d’anomalies pour APIs REST par IA',
+      project2_1: 'Fine-tuning d’un modèle LLaMA avec QLoRA sur des jeux de données de journaux réseau structurés pour identifier les charges utiles malveillantes et les signatures de fuzzing.',
+      project2_2: 'Ingénierie des fonctionnalités de télémétrie HTTP pour améliorer la détection d’anomalies, directement cartographiée sur l’OWASP API Top 10.',
       skills_title: 'Compétences',
-      skills_appsec: 'Sécurité AppSec & Réseau',
-      skills_devops: 'DevOps & Automatisation',
-      skills_scripting: 'Scripting & Analyse',
-      activities_title: 'Parcours',
+      skills_devops: 'Sécurité Cloud-Native & DevSecOps',
+      skills_secops: 'Opérations de sécurité (SecOps)',
+      skills_monitoring: 'Supervision, MCO & Télémétrie',
+      skills_systems: 'Systèmes, Infrastructure & Durcissement',
+      skills_appsec: 'Sécurité Applicative & IA',
+      skills_scripting: 'Programmation & Automatisation',
+      activities_title: 'Expérience & parcours',
+      experience_eyebrow: 'Expérience phare',
+      experience_role: 'Solution de supervision IT pour les serveurs internes de test et d’intégration',
+      experience_dates: 'Juil. 2026 – Août 2026',
+      experience_location: 'Rabat, Maroc · Sur site',
+      experience_lede: 'Une mission terrain au cœur de la supervision, de la fiabilité et du durcissement d’une infrastructure critique de test.',
+      experience_1: 'Conception et déploiement d’une plateforme Prometheus/Grafana couvrant 7 serveurs physiques, avec dashboards temps réel et alerting.',
+      experience_2: 'Validation sur 5 scénarios de pannes réelles avant le déploiement sur l’ensemble du parc.',
+      experience_3: 'Durcissement TLS, authentification, règles de pare-feu, permissions NTFS et alertes de détection de menaces.',
+      experience_4: 'Automatisation du provisionnement avec Terraform : réduction de 45–60 minutes à environ 3 minutes.',
+      experience_metric_servers: 'serveurs physiques supervisés',
+      experience_metric_failures: 'scénarios de pannes validés',
+      experience_metric_terraform: 'provisionnement automatisé avec Terraform',
       activities_education: 'Formation',
+      activities_education_details: 'Diplôme d’Ingénieur d’État — Sécurité des Systèmes d’Information et Cybersécurité<br>2022 – Présent · Oujda, Maroc<br>Modules : Cloud Computing, sécurité des services &amp; protocoles, systèmes Unix/Windows, pentesting, audit &amp; risques, forensics, machine learning, cryptographie avancée.',
       activities_certifications: 'Certifications',
       activities_languages: 'Langues',
       contact_title: 'Contact',
-      contact_text: "Je recherche actuellement un <strong>stage PFA en cybersécurité / sécurité applicative</strong> pour l'été 2026.<br>Pour toute opportunité, question ou échange sur la sécurité, n'hésitez pas à me contacter !",
+      contact_text: 'Je recherche actuellement un <strong>stage PFE de 6 mois au Maroc</strong>, de février à juillet 2027.<br>DevSecOps, sécurité cloud-native, SecOps ou détection de menaces : parlons de votre sujet !',
       contact_email: '<i class="fa-solid fa-envelope"></i> Email',
       contact_github: '<i class="fa-brands fa-github"></i> GitHub',
       contact_linkedin: '<i class="fa-brands fa-linkedin"></i> LinkedIn',
@@ -50,37 +65,52 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_about: 'About',
       nav_projects: 'Projects',
       nav_skills: 'Skills',
-      nav_activities: 'Background',
+      nav_activities: 'Experience',
       nav_contact: 'Contact',
+      theme_use_dark: 'Use dark theme',
+      theme_use_light: 'Use light theme',
+      lang_switch_en: 'Switch to English',
+      lang_switch_fr: 'Switch to French',
       hero_hi: "Hi, I'm",
-      hero_location: '<i class="fa-solid fa-location-dot"></i> Oujda, Morocco',
+      hero_location: '<i class="fa-solid fa-location-dot"></i> Oujda, Morocco · Available for a PFE internship in Morocco',
       hero_cv: '<i class="fa-solid fa-download"></i> Download CV',
       about_title: 'About Me',
-      about_main: "4th year cybersecurity engineering student, passionate about application security and vulnerability analysis.<br>Looking for a PFA internship (Summer 2026) to contribute to real security missions and develop my skills on real-world challenges.<br>Rigorous, autonomous, and motivated by continuous learning.",
-      about_skills: 'Skills: DevOps (Docker, CI/CD, Linux), AppSec & Network Security (STRIDE, SAST/DAST/SCA, Fuzzing), Scripting (Python, Bash), Log analysis, Automation.<br>Languages: French, English, Arabic.',
+      about_main: "Curious and motivated by building resilient, secure-by-design systems.<br>Focused on DevSecOps, cloud-native security, and threat detection.<br>Looking for a 6-month PFE internship in Morocco from February to July 2027.",
+      about_skills: 'Profile: cybersecurity engineering student focused on resilient systems, automation, and security operations.<br>Education: ENSAO — Information Systems Security and Cybersecurity, 2022–present.',
       projects_title: 'Projects',
-      project1_title: 'Automated Anomaly Detection System for REST APIs',
-      project1_1: 'Extracted and structured network features from raw logs to distinguish legitimate traffic from complex attacks.',
-      project1_2: 'Integrated and fine-tuned an AI model (LLaMa) via Python scripts to automate malicious payload detection (fuzzing) and reduce false positives.',
-      project1_3: 'Containerized the analysis environment and wrote technical documentation in English for functional tests.',
-      project2_title: 'Automated Vulnerability Analysis CI/CD Pipeline',
-      project2_1: 'Designed a CI/CD pipeline with GitHub Actions to automate security tests on every code commit.',
-      project2_2: 'Integrated open-source tools (Trivy, Bandit) via Shell scripts to automatically scan Docker images and source code.',
-      project2_3: 'Configured the pipeline to block deployments on critical vulnerabilities and automatically generate audit reports.',
-      project3_title: 'Network Security Analysis Tool for Android',
-      project3_1: 'Created a utility to automatically extract Network Security Configuration (NSC) files from compiled APKs.',
-      project3_2: 'Analyzed extracted NSC files to detect potential misconfigurations exposing apps to network security flaws.',
-      project3_3: 'Ran the analysis script on a targeted dataset (Moroccan and F-Droid APKs) to assess real-world vulnerability prevalence and discussed results.',
+      project1_title: 'Cloud-Native DevSecOps & Runtime Security Platform',
+      project1_1: 'Built a GitHub Actions CI/CD pipeline with vulnerability and secret scanning (Trivy), SBOM generation (Syft), and cryptographic container signing (Cosign).',
+      project1_2: 'Applied Zero Trust policies with Kyverno on k3s: block unsigned images and root containers, and enforce read-only filesystems.',
+      project1_3: 'Added runtime eBPF detection with Cilium Tetragon, Prometheus/Grafana observability, and automatic isolation of suspicious pods with NetworkPolicies.',
+      project2_title: 'AI-Based Anomaly Detection for REST APIs',
+      project2_1: 'Fine-tuned a LLaMA model with QLoRA on structured network-log datasets to identify malicious payloads and fuzzing signatures.',
+      project2_2: 'Engineered HTTP telemetry features to improve anomaly detection, mapped directly to the OWASP API Top 10.',
       skills_title: 'Skills',
-      skills_appsec: 'AppSec & Network Security',
-      skills_devops: 'DevOps & Automation',
-      skills_scripting: 'Scripting & Analysis',
-      activities_title: 'Background',
+      skills_devops: 'Cloud-Native Security & DevSecOps',
+      skills_secops: 'Security Operations (SecOps)',
+      skills_monitoring: 'Monitoring, MCO & Telemetry',
+      skills_systems: 'Systems, Infrastructure & Hardening',
+      skills_appsec: 'Application Security & AI',
+      skills_scripting: 'Programming & Automation',
+      activities_title: 'Experience & background',
+      experience_eyebrow: 'Career highlight',
+      experience_role: 'IT monitoring solution for internal test and integration servers',
+      experience_dates: 'Jul 2026 – Aug 2026',
+      experience_location: 'Rabat, Morocco · On site',
+      experience_lede: 'Hands-on work at the intersection of monitoring, reliability, and hardening for a critical test infrastructure.',
+      experience_1: 'Designed and deployed a Prometheus/Grafana platform covering 7 physical servers, with real-time dashboards and alerting.',
+      experience_2: 'Validated the solution against 5 real failure scenarios before deployment across the fleet.',
+      experience_3: 'Hardened TLS, authentication, firewall rules, NTFS permissions, and threat-detection alerts.',
+      experience_4: 'Automated server provisioning with Terraform, reducing the process from 45–60 minutes to about 3 minutes.',
+      experience_metric_servers: 'physical servers monitored',
+      experience_metric_failures: 'failure scenarios validated',
+      experience_metric_terraform: 'automated provisioning with Terraform',
       activities_education: 'Education',
+      activities_education_details: 'State Engineering Degree — Information Systems Security and Cybersecurity<br>2022 – Present · Oujda, Morocco<br>Modules: Cloud Computing, service & protocol security, Unix/Windows systems, pentesting, risk & audit, forensics, machine learning, advanced cryptography.',
       activities_certifications: 'Certifications',
       activities_languages: 'Languages',
       contact_title: 'Contact',
-      contact_text: "Currently seeking a <strong>PFA internship in cybersecurity / application security</strong> for Summer 2026.<br>For any opportunity, question, or discussion about security, feel free to contact me!",
+      contact_text: 'Currently seeking a <strong>6-month PFE internship in Morocco</strong> from February to July 2027.<br>DevSecOps, cloud-native security, SecOps, or threat detection — let’s talk about your project!',
       contact_email: '<i class="fa-solid fa-envelope"></i> Email',
       contact_github: '<i class="fa-brands fa-github"></i> GitHub',
       contact_linkedin: '<i class="fa-brands fa-linkedin"></i> LinkedIn',
@@ -88,21 +118,23 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   let currentLang = localStorage.getItem('lang') || 'fr';
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const langToggle = document.getElementById('langToggle');
   const langLabel = document.getElementById('langLabel');
+  const themeToggle = document.getElementById('themeToggle');
 
   function updateLangUI(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (i18n[lang][key]) {
-        if (el.tagName === 'A' || el.tagName === 'BUTTON' || el.classList.contains('btn') || el.classList.contains('section-title')) {
-          el.innerHTML = i18n[lang][key];
-        } else {
-          el.innerHTML = i18n[lang][key];
-        }
+        el.innerHTML = i18n[lang][key];
       }
     });
+    document.documentElement.lang = lang;
     langLabel.textContent = lang.toUpperCase();
+    langToggle.setAttribute('aria-label', lang === 'fr' ? i18n[lang].lang_switch_en : i18n[lang].lang_switch_fr);
+    const activeTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    themeToggle.setAttribute('aria-label', activeTheme === 'light' ? i18n[lang].theme_use_dark : i18n[lang].theme_use_light);
     localStorage.setItem('lang', lang);
   }
 
@@ -117,11 +149,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========== TYPING ANIMATION ==========
   const typedElement = document.getElementById('typed-text');
   const phrases = [
-    'Cloud / DevOps Engineer',
-    'CI/CD Pipeline Builder',
-    'Container Orchestration',
-    'Infrastructure Automation',
-    'Linux & Security Enthusiast'
+    'Cybersecurity Engineering Student',
+    'DevSecOps & Cloud-Native Security',
+    'Security Operations',
+    'Threat Detection',
+    'Infrastructure Automation'
   ];
   let phraseIndex = 0;
   let charIndex = 0;
@@ -160,33 +192,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  typeEffect();
+  if (reduceMotion) {
+    typedElement.textContent = phrases[0];
+  } else {
+    typeEffect();
+  }
 
 
   // ========== MOBILE NAV TOGGLE ==========
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
 
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+  function setNavOpen(isOpen) {
+    navLinks.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
     const icon = navToggle.querySelector('i');
-    icon.classList.toggle('fa-bars');
-    icon.classList.toggle('fa-xmark');
+    icon.classList.toggle('fa-bars', !isOpen);
+    icon.classList.toggle('fa-xmark', isOpen);
+  }
+
+  navToggle.addEventListener('click', () => {
+    setNavOpen(!navLinks.classList.contains('open'));
   });
 
   // Close mobile nav on link click
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      const icon = navToggle.querySelector('i');
-      icon.classList.add('fa-bars');
-      icon.classList.remove('fa-xmark');
+      setNavOpen(false);
     });
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      setNavOpen(false);
+    }
   });
 
 
   // ========== THEME TOGGLE (Dark / Light) ==========
-  const themeToggle = document.getElementById('themeToggle');
   const savedTheme = localStorage.getItem('theme') || 'dark';
 
   function applyTheme(theme) {
@@ -199,6 +242,11 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.classList.remove('fa-sun');
       icon.classList.add('fa-moon');
     }
+    themeToggle.setAttribute('aria-pressed', String(theme === 'light'));
+    const themeLabel = currentLang === 'fr'
+      ? (theme === 'light' ? i18n.fr.theme_use_dark : i18n.fr.theme_use_light)
+      : (theme === 'light' ? i18n.en.theme_use_dark : i18n.en.theme_use_light);
+    themeToggle.setAttribute('aria-label', themeLabel);
     localStorage.setItem('theme', theme);
   }
 
@@ -213,25 +261,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========== FADE-IN ON SCROLL (Intersection Observer) ==========
   const fadeElements = document.querySelectorAll('.fade-in');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    fadeElements.forEach(el => el.classList.add('visible'));
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
     });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  });
 
-  fadeElements.forEach(el => observer.observe(el));
+    fadeElements.forEach(el => observer.observe(el));
+  }
 
 
   // ========== NAVBAR SCROLL EFFECT ==========
   const navbar = document.getElementById('navbar');
-  let lastScroll = 0;
-
   window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
 
@@ -242,7 +292,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.style.boxShadow = 'none';
     }
 
-    lastScroll = currentScroll;
   });
 
 
@@ -259,10 +308,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const link = document.querySelector(`.nav-links a[href="#${id}"]`);
 
       if (link) {
-        if (scrollPos >= top && scrollPos < top + height) {
+        const isActive = scrollPos >= top && scrollPos < top + height;
+        if (isActive) {
           link.style.color = 'var(--accent)';
         } else {
           link.style.color = '';
+        }
+        if (isActive) {
+          link.setAttribute('aria-current', 'location');
+        } else {
+          link.removeAttribute('aria-current');
         }
       }
     });
